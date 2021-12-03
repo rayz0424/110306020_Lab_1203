@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+	</title>
+</head>
+<body>
+	<script>
+		var rand=Math.floor(Math.random()*10+1);
+		var done=false;
+		while(!done){
+			var answer=window.prompt("Please guess a numer between1~10");
+			if(answer==rand){
+				alert("you are right!");
+				done=true;
+			}else if(answer<1 || answer>10){
+				alert("number out of range");
+			}else{
+				alert("try again");
+			}
+		}
+		document.write("Please refresh the page to restart");
+	</script>
+</body>
+</html>
